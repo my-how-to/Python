@@ -1,16 +1,19 @@
 # ==============================================
-# Adapter Pattern Example (Simple and Clear)
+# Pattern Name: Adapter
+# Pattern Type: Structural
 # ==============================================
 # Author: Alexandru Petrenco (with AI assistance from OpenAI GPT-5)
-# 
 # Description:
-#   This file demonstrates the Adapter Design Pattern
-#   using a fun and easy-to-understand analogy:
-#   a European charger that needs to work with a USA socket.
+#   The Adapter pattern allows incompatible classes to work together
+#   by converting the interface of one class into another that
+#   clients expect. It acts like a translator between two systems
+#   that speak different “languages”.
 #
-#   The Adapter pattern helps two incompatible interfaces
-#   work together without changing their code.
-#   It's like using a plug adapter when traveling abroad.
+# Classifier:
+#   - Category: Structural
+#   - Purpose: Bridge between incompatible interfaces.
+#   - Key idea: Wrap an existing class with a new interface.
+#   - Common use: Integrating old code or external APIs into new systems.
 # ==============================================
 
 # -----------------------------
@@ -19,7 +22,7 @@
 class EuropeanCharger:
     def provide_power_eu(self):
         """Simulates providing power from a European outlet (220V)."""
-        return "⚡ Power from European outlet (220V)"
+        return "Power from European outlet (220V)"
 
 
 # -----------------------------
@@ -28,7 +31,7 @@ class EuropeanCharger:
 class USASocket:
     def supply_power_usa(self):
         """Simulates providing power from a USA outlet (110V)."""
-        return "🔌 Power from USA outlet (110V)"
+        return "Power from USA outlet (110V)"
 
 
 # -----------------------------
@@ -59,8 +62,10 @@ if __name__ == "__main__":
     # Now it can work with the USA socket system
     print(adapter.supply_power_usa())
 
-    # Output:
-    # ⚡ Power from European outlet (220V) adapted to USA standard!
+# -----------------------------
+# Example Output
+# -----------------------------
+# Power from European outlet (220V) adapted to USA standard!
 
 
 # ==============================================

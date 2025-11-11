@@ -99,6 +99,8 @@ if __name__ == "__main__":
 # ==============================================
 # The Factory Method pattern was formalized in 1994 by the "Gang of Four".
 # The registry-based approach evolved later as developers sought more flexible
-# designs. It removes the need for repetitive if/else checks and allows new
+# designs. 
+# 
+# It removes the need for repetitive if/else checks and allows new
 # classes to integrate automatically — perfect for plugin-like systems.
 # ==============================================

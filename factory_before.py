@@ -46,9 +46,7 @@ class VanillaCake(Cake):
 def main():
     print("--- Before Factory Method Example ---")
 
-    # In older code, developers would directly instantiate classes
-    # in multiple places throughout the program.
-
+    # Direct instantiation in multiple places of the program.
     choco = ChocolateCake()
     fruit = FruitCake()
     vanilla = VanillaCake()
@@ -57,9 +55,22 @@ def main():
     print(fruit.bake())
     print(vanilla.bake())
 
-    # If tomorrow a new cake type is added (e.g., CheeseCake),
-    # developers would have to find all these creation points
-    # and add new code manually — error-prone and repetitive.
+    # Imagine this same code duplicated across several modules:
+    print("\n--- Another module needing cakes ---")
+    cake_list = [
+        ChocolateCake(),
+        FruitCake(),
+        VanillaCake(),
+    ]
+    for cake in cake_list:
+        print(cake.bake())
+
+    # Now suppose a new cake type (CheeseCake) is added.
+    # Developers must update every section like this manually.
+    print(
+        "\nAdding a new cake type means finding and changing code everywhere —\n"
+        "each module that creates cakes must be updated."
+    )
 
 
 if __name__ == "__main__":
@@ -69,10 +80,18 @@ if __name__ == "__main__":
 # ==============================================
 # Example Output
 # ==============================================
-# --- Before Factory Method Example ---
+#--- Before Factory Method Example ---
 # A delicious chocolate cake!
 # A sweet fruit cake!
 # A soft vanilla cake!
+#
+#--- Another module needing cakes ---
+# A delicious chocolate cake!
+# A sweet fruit cake!
+# A soft vanilla cake!
+#
+# Adding a new cake type means finding and changing code everywhere —
+# each module that creates cakes must be updated.
 # ==============================================
 
 

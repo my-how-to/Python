@@ -83,6 +83,8 @@ if __name__ == "__main__":
 # ==============================================
 # The Factory Method pattern appeared in the 1994 book
 # "Design Patterns: Elements of Reusable Object-Oriented Software"
-# by the Gang of Four. It evolved from the need to simplify object
+# by the Gang of Four. 
+# 
+# It evolved from the need to simplify object
 # creation in large systems where many classes existed.
 # ==============================================
