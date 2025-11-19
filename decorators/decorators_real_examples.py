@@ -1,17 +1,14 @@
-"""
-=========================================
-   DECORATORS — REAL-WORLD EXAMPLES
-=========================================
-
-This file contains practical decorators used in real projects:
-    - logging
-    - timing performance
-    - caching results
-    - retrying failed operations
-    - validation and permission examples
-
-All examples are runnable and include clear explanations.
-"""
+# ============================================================
+# DECORATORS — REAL-WORLD EXAMPLES
+# ============================================================
+# Practical decorators used in real projects:
+# • logging
+# • timing performance
+# • caching results
+# • retrying failed operations
+# • validation and permission checks
+#
+# Each example is runnable and clearly explained.
 
 import time
 import functools

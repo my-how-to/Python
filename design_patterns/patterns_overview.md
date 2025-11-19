@@ -15,7 +15,7 @@ Each entry includes a short, one-line description and a link to the correspondin
 | --------------------------------------------- | ------------------------------------------------------------------------------- |
 | [**factory.py**](factory.py)                  | Creates objects without specifying the exact class to instantiate.              |
 | [**abstract_factory.py**](abstract_factory.py) | Produces families of related objects without specifying their concrete classes. |
-| [**builder.py**](builder.md)          | Separates the construction of a complex object from its representation.         |
+| [**builder.py**](builder.py)          | Separates the construction of a complex object from its representation.         |
 | [**prototype.py**](prototype.py)              | Creates new objects by copying existing ones (cloning).                         |
 | [**singleton.py**](singleton.py)              | Ensures a class has only one instance and provides a global access point.       |
 
@@ -26,8 +26,8 @@ Each entry includes a short, one-line description and a link to the correspondin
 | Pattern                                | Description                                                                               |
 | -------------------------------------- | ----------------------------------------------------------------------------------------- |
 | [**adapter.py**](adapter.py)           | Bridges incompatible interfaces so that classes can work together.                        |
-| [**bridge.py**](bridge.md)    | Separates an object’s abstraction from its implementation so they can vary independently. |
-| [**composite.py**](missing_pattern.md) | Composes objects into tree structures to represent part-whole hierarchies.                |
+| [**bridge.py**](bridge.py)    | Separates an object’s abstraction from its implementation so they can vary independently. |
+| [**composite.py**](composite.py) | Composes objects into tree structures to represent part-whole hierarchies.                |
 | [**decorator.py**](decorator.py)       | Dynamically adds or modifies functionality of an object at runtime.                       |
 | [**facade.py**](missing_pattern.md)    | Provides a simplified interface to a larger body of code.                                 |
 | [**flyweight.py**](missing_pattern.md) | Reduces memory usage by sharing common data between similar objects.                      |
