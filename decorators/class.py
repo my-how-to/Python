@@ -1,21 +1,19 @@
-"""
-=========================================
-   DECORATORS — CLASS DECORATORS
-=========================================
-
-This file explains how decorators can be applied to ENTIRE classes.
-
-Class decorators are functions that receive a class, modify it, and
-return the modified class. They are useful for:
-
-    - adding methods or attributes to classes
-    - enforcing rules (validation)
-    - registering classes automatically
-    - modifying or wrapping class behavior
-    - building plugin systems
-
-All examples are runnable and include explanations.
-"""
+#=========================================
+#   DECORATORS — CLASS DECORATORS
+#=========================================
+#
+# This file explains how decorators can be applied to ENTIRE classes.
+#
+# Class decorators are functions that receive a class, modify it, and
+# return the modified class. They are useful for:
+#
+#    - adding methods or attributes to classes
+#    - enforcing rules (validation)
+#    - registering classes automatically
+#    - modifying or wrapping class behavior
+#    - building plugin systems
+#
+#All examples are runnable and include explanations.
 
 import functools
 
