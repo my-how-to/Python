@@ -43,7 +43,7 @@ Each entry includes a short, one-line description and a link to the correspondin
 | [**command.py**](command.py)                 | Encapsulates a request as an object, allowing parameterization and queuing of operations. |
 | [**interpreter.py**](Interpreter.py)             | Defines a grammar and interpreter for a language or symbolic expressions.                 |
 | [**iterator.py**](iterator.py)                | Provides a way to access elements of a collection without exposing its structure.         |
-| [**mediator.py**](missing_pattern.md)                | Defines an object that coordinates communication between multiple objects.                |
+| [**mediator.py**](mediator.py)                | Defines an object that coordinates communication between multiple objects.                |
 | [**memento.py**](missing_pattern.md)                 | Captures and restores an object’s internal state without exposing details.                |
 | [**observer.py**](observer.py)                       | Allows objects to subscribe and react to events or state changes in another object.       |
 | [**state.py**](missing_pattern.md)                   | Allows an object to alter its behavior when its internal state changes.                   |
