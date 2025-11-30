@@ -1,6 +1,5 @@
-# ============================================================
-#        PYTHON EXCEPTIONS — QUICK REFERENCE & CHEATSHEET
-# ============================================================
+# PYTHON EXCEPTIONS — QUICK REFERENCE & CHEATSHEET
+
 Author: Alexandru Petrenco (with AI assistance from GPT-5)
 
 This file is a certification-oriented summary of the most common
@@ -14,7 +13,7 @@ Useful for:
 
 ---
 
-# ✅ CERTIFICATION TIP
+# CERTIFICATION TIP
 
 For PCEP and PCAP, the most commonly tested exceptions are:
 
@@ -30,7 +29,7 @@ Master these and you'll cover **90%** of real-world and exam cases.
 
 ---
 
-# 🟦 Input and Type Errors
+# Input and Type Errors
 
 | Exception     | When It Happens                                   | Example                     |
 |---------------|----------------------------------------------------|-----------------------------|
@@ -42,7 +41,7 @@ Master these and you'll cover **90%** of real-world and exam cases.
 
 ---
 
-# 🟧 Math and Numeric Errors
+# Math and Numeric Errors
 
 | Exception            | When It Happens                            | Example               |
 |----------------------|---------------------------------------------|------------------------|
@@ -52,7 +51,7 @@ Master these and you'll cover **90%** of real-world and exam cases.
 
 ---
 
-# 🟨 File and I/O Errors
+# File and I/O Errors
 
 | Exception           | When It Happens                                  | Example                      |
 |---------------------|---------------------------------------------------|------------------------------|
@@ -62,7 +61,7 @@ Master these and you'll cover **90%** of real-world and exam cases.
 
 ---
 
-# 🟥 Import and Module Errors
+# Import and Module Errors
 
 | Exception              | When It Happens                    | Example                              |
 |------------------------|-------------------------------------|----------------------------------------|
@@ -71,7 +70,7 @@ Master these and you'll cover **90%** of real-world and exam cases.
 
 ---
 
-# 🟩 Logic and Syntax Errors
+# Logic and Syntax Errors
 
 | Exception          | When It Happens                        | Example                     |
 |--------------------|-----------------------------------------|-----------------------------|
@@ -81,7 +80,7 @@ Master these and you'll cover **90%** of real-world and exam cases.
 
 ---
 
-# 🟪 Other Useful Exceptions
+# Other Useful Exceptions
 
 | Exception          | When It Happens                                | Example           |
 |--------------------|-------------------------------------------------|-------------------|
@@ -92,12 +91,10 @@ Master these and you'll cover **90%** of real-world and exam cases.
 
 ---
 
-# 🧠 Final Notes
+# Final Notes
 
 - Python exceptions form a full inheritance tree under `BaseException`.
 - Most exceptions come from logical errors, not Python itself.
 - In certification exams, **understanding WHEN exceptions happen** is more important than memorizing names.
 
 ---
-
-# END OF FILE
