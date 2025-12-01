@@ -17,8 +17,8 @@ Below is a structured **table of contents** with a short description for every l
 | **5**    | [Dictionaries](dictionaries.py)                         | key/value storage, updates, looping, membership      | —                                        |      |
 | **6**    | [File Handling](files.py)                               | read/write, append, with-statement, CSV              | [read more](files_documentation.md)      |      |
 | **7**    | [Functions](functions.py)                               | parameters, return, scope, reusable code             | —                                        |      |
-| **8.1**  | [Exception Handling](error_handling.py)                 | try/except, specific errors, finally                 | [read more](error_handling_fererence.md) |      |
-| **8.2**  | [Error Handling (OOP)](error_handling_oop.py)           | exceptions inside classes/methods                    | [read more](error_handling_fererence.md) |      |
+| **8.1**  | [Exception Handling](error_handling.py)                 | try/except, specific errors, finally                 | [read more](error_handling_reference.md) |      |
+| **8.2**  | [Error Handling (OOP)](error_handling_oop.py)           | exceptions inside classes/methods                    | [read more](error_handling_reference.md) |      |
 | **9.1**  | [Tuples](tuples.py)                                     | immutable ordered collections, unpacking             | —                                        |      |
 | **9.2**  | [Sets](sets.py)                                         | unique items, set operations                         | —                                        |      |
 | **10.1** | [Comprehensions](comprehensions.py)                     | list/dict/set comprehensions                         | —                                        |      |
