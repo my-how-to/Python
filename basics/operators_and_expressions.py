@@ -4,11 +4,10 @@
 # Author: Alexandru Petrenco (with AI assistance from OpenAI GPT-5)
 #
 # Description:
-#   This lesson introduces:
-#       - arithmetic, comparison, logical, assignment operators
-#       - expressions and evaluation order
-#       - operator shortcuts (+=, -=, etc.)
-#       - real-world examples
+#   This lesson introduces operators and expressions in Python:
+#   what expressions are, arithmetic operators, comparison
+#   operators, logical operators, assignment operators, operator
+#   precedence, and practical mini-examples.    
 #
 # Contents:
 #   1. What is an expression?
@@ -18,6 +17,7 @@
 #   5. Assignment operators
 #   6. Operator precedence
 #   7. Practical mini-examples
+#
 # ============================================================
 
 

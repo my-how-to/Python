@@ -1,27 +1,36 @@
 # ==========================================
 #            LESSON 7 - FUNCTIONS
 # ==========================================
-# This file explains Python functions:
-#   - defining and calling functions
-#   - parameters and return values
-#   - default parameters
-#   - multiple returns
-#   - scope and global variables
-#   - *args and **kwargs
-#   - lambda functions
-#   - type hints
-#   - function aliases
-#   - functions as arguments
-#   - nested functions
-#   - closures and nonlocal
-#   - recursion
-#   - positional-only and keyword-only parameters
-#   - function stubs (pass, ...)
-#   - docstring examples (PEP-257)
+# Author: Alexandru Petrenco (with AI assistance from OpenAI GPT-5)
 #
-# Each section prints a separator so the output is clean.
-
-
+# Description:
+#   This lesson covers functions in Python: basic definition,
+#   parameters, return values, scope, *args/**kwargs,
+#   lambda functions, type hints, function aliases, nested
+#   functions, closures, recursion, and more.
+#
+# Contents:
+#   1. Basic function definition
+#   2. Functions with parameters
+#   3. Return values
+#   4. Default parameters
+#   5. Multiple returns (tuple)
+#   6. Scope (local vs global)
+#   7. *args — multiple positional arguments
+#   8. **kwargs — multiple named arguments
+#   9. Combining *args and **kwargs
+#   10. Lambda functions
+#   11. Type hints
+#   12. Function aliases
+#   13. Functions as arguments
+#   14. Nested functions
+#   15. Closures
+#   16. nonlocal
+#   17. Recursion
+#   18. Positional-only & keyword-only parameters
+#   19. Function stubs (placeholders)
+#   20. Docstring format (PEP-257)
+# 
 # ==========================================
 # 1. BASIC FUNCTION DEFINITION
 # ==========================================

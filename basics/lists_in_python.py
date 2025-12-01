@@ -1,10 +1,22 @@
 # ===========================================
 #            LESSON 4 — LISTS (COLLECTIONS)
 # ===========================================
-
-# Collections let you store multiple values in one variable,
-# such as a group of numbers, words, or even objects.
-
+# Author: Alexandru Petrenco (with AI assistance from OpenAI GPT-5)
+#
+# Description:
+#   This lesson covers lists in Python: what they are, how to
+#   create them, accessing and modifying items, useful list
+#   methods, looping through lists, list comprehensions, and
+#   nested lists.
+#   
+#   Collections let you store multiple values in one variable,
+#   such as a group of numbers, words, or even objects.
+# 
+# Contents:
+#   1. Lists — the Most Common Collection
+#   2. Useful List Functions
+#   3. Nested Lists (Lists Inside Lists)
+#
 # ============================================================
 # 1) Lists — the Most Common Collection
 # ============================================================

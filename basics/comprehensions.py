@@ -1,9 +1,22 @@
 # ===========================================
 #            LESSON 10.1 - COMPREHENSIONS
 # ===========================================
-
-# Comprehensions let you build collections in a single, expressive line.
-
+# Author: Alexandru Petrenco (with AI assistance from OpenAI GPT-5)
+#
+# Description:
+#   This lesson explains comprehensions in Python: list,
+#   dictionary, set comprehensions, nested comprehensions,
+#   and generator expressions.  
+#
+#  Comprehensions let you build collections in a single, expressive line.
+#
+# Contents:
+#   1. List Comprehensions
+#   2. Dictionary Comprehensions
+#   3. Set Comprehensions
+#   4. Nested Comprehensions
+#   5. Extra Notes
+# 
 # ============================================================
 # 1) List Comprehensions
 # ============================================================

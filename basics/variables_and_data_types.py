@@ -4,12 +4,10 @@
 # Author: Alexandru Petrenco (with AI assistance from OpenAI GPT-5)
 #
 # Description:
-#   This lesson introduces:
-#       - what variables are
-#       - naming rules
-#       - dynamic typing
-#       - main built-in data types used in Python
-#       - simple real-world examples
+#   This lesson introduces variables and data types in Python:  
+#   what variables are, naming rules, dynamic typing, main data
+#   types (int, float, str, bool, list, tuple, set, dict), type
+#   checking with type(), type conversions, and practical examples.
 #
 # Contents:
 #   1. What is a variable?
@@ -19,6 +17,7 @@
 #   5. Type checking
 #   6. Converting between types
 #   7. Practical mini-examples
+#
 # ============================================================
 
 

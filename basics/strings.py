@@ -4,15 +4,10 @@
 # Author: Alexandru Petrenco (with AI assistance from OpenAI GPT-5)
 #
 # Description:
-#   This lesson explains Python strings in depth:
-#       - string basics and immutability
-#       - indexing and slicing
-#       - common string methods
-#       - searching and replacing
-#       - splitting and joining
-#       - f-strings and formatting
-#       - escaping characters
-#       - multi-line strings
+#   This lesson explains Python strings: what they are, how to
+#   create them, indexing and slicing, useful methods, searching,
+#   replacing, splitting/joining, trimming, formatting with
+#   f-strings, escaping characters, and multi-line strings.
 #
 # Contents:
 #   1. Strings are immutable
@@ -26,6 +21,7 @@
 #   9. F-strings and formatting
 #   10. Escaping characters
 #   11. Multi-line strings
+#
 # ============================================================
 
 

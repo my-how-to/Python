@@ -4,12 +4,9 @@
 # Author: Alexandru Petrenco (with AI assistance from OpenAI GPT-5)
 #
 # Description:
-#   This lesson introduces:
-#       - what lambda functions are
-#       - syntax and usage
-#       - when to use/not use lambda
-#       - lambdas with sorted(), filter(), map()
-#       - real-world quick examples
+#   This lesson explains lambda functions in Python: what they
+#   are, basic syntax, differences from normal functions, and
+#   practical uses with map(), filter(), and sorted().
 #
 # Contents:
 #   1. What is a lambda function?
@@ -19,6 +16,7 @@
 #   5. Using lambdas with filter()
 #   6. Using lambdas with sorted()
 #   7. Practical mini-examples
+#
 # ============================================================
 
 

@@ -1,11 +1,24 @@
 # ===========================================
 #            LESSON 5 — DICTIONARIES (COLLECTIONS)
 # ===========================================
-
-# A dictionary stores key-value pairs.
-# Each key must be unique, and it points to a specific value — 
-# like a real-world dictionary maps a word to its definition.
-
+# Author: Alexandru Petrenco (with AI assistance from OpenAI GPT-5)
+#
+# Description:
+#   This lesson covers dictionaries in Python: what they are,
+#   how to create them, accessing, adding, updating, and
+#   removing items, looping through dictionaries, checking
+#   membership, and getting the length.
+#   
+#   A dictionary stores key-value pairs.
+#   Each key must be unique, and it points to a specific value — 
+#   like a real-world dictionary maps a word to its definition.
+#
+# Contents:
+#   1. Dictionaries — Mapped Data
+#   2. Adding, Updating, and Removing
+#   3. Looping Through a Dictionary
+#   4. Checking Membership & Length
+#
 # ============================================================
 # 1) Dictionaries — Mapped Data
 # ============================================================

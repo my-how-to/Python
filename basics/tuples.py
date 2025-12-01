@@ -1,9 +1,18 @@
 # ===========================================
 #            LESSON 9.1 - TUPLES (COLLECTIONS)
 # ===========================================
-
-# Tuples look like lists but cannot be changed after creation.
-
+# Author: Alexandru Petrenco (with AI assistance from OpenAI GPT-5)
+#
+# Description:
+#   This lesson covers tuples in Python: what they are, how to
+#   create them, indexing and slicing, immutability, tuple
+#   unpacking, single-element tuples, and tuple concatenation.
+#
+# Contents:
+#   1. Tuples — Immutable Sequences
+#   2. Tuple Tricks
+#   3. Tuple Concatenation  
+#  
 # ============================================================
 # 1) Tuples — Immutable Sequences
 # ============================================================

@@ -1,9 +1,18 @@
 # ===========================================
 #            LESSON 9.2 - SETS (COLLECTIONS)
 # ===========================================
-
-# Sets store unique items only (duplicates are removed automatically).
-
+# Author: Alexandru Petrenco (with AI assistance from OpenAI GPT-5)
+#
+# Description:
+#   This lesson covers sets in Python: what they are, how to
+#   create them, adding/removing items, membership testing,
+#   and powerful set operations (union, intersection,
+#   difference, symmetric difference).
+#
+# Contents:
+#   1. Sets — Unique, Unordered Collections
+#   2. Set Operations (Powerful!)
+#
 # ============================================================
 # 1) Sets — Unique, Unordered Collections
 # ============================================================
