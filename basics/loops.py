@@ -52,7 +52,7 @@ for letter in "Python":
 
 
 # ================================
-# 2. WHILE LOOPS (unknown count)
+# 2. WHILE LOOPS (unknown count) - printing OUTSIDE the loop
 # ================================
 
 count = 0
@@ -69,7 +69,18 @@ while count < 3:
 # WARNING:
 # while True → infinite loop unless break is used.
 
+# ==========================================
+# 2.1 Example — printing OUTSIDE the loop (final value printed after the loop finishes)
+# ==========================================
 
+count = 0
+
+while count < 3:
+    count += 1
+print("Final count:", count)
+
+# Output:
+# Final count: 3
 
 # ================================
 # 3. BREAK STATEMENT

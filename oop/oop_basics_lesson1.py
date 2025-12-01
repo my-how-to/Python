@@ -94,9 +94,34 @@ print("\nBrand:", my_car.brand)
 print("Color:", my_car.color)
 # `self` gives access to each object's attributes inside the class.
 
+# ===========================================
+# 6. CLASS ATTRIBUTE VS INSTANCE ATTRIBUTE
+# ===========================================
+#
+# Class attribute:
+#   - defined at class level
+#   - shared by ALL instances
+#
+# Instance attribute:
+#   - defined inside __init__
+#   - unique to each object
+#
+# Example:
+
+class A:
+    x = 5  # class attribute
+
+a = A()
+a.x = 10  # creates an INSTANCE attribute with the same name
+
+print(A.x)  # 5  (class attribute unchanged)
+print(a.x)  # 10 (instance attribute shadows class attribute)
+
+# Key rule:
+# Changing an attribute through an instance does NOT modify the class attribute.
 
 # ===========================================
-# 6 CLASS WITH DEFAULT VALUES & ENCAPSULATION
+# 7 CLASS WITH DEFAULT VALUES & ENCAPSULATION
 # ===========================================
 
 class BankAccount:
@@ -124,7 +149,7 @@ alex.withdraw(30)
 
 
 # ===========================================
-# 7 INHERITANCE & POLYMORPHISM
+# 8 INHERITANCE & POLYMORPHISM
 # ===========================================
 
 class ElectricCar(Car):
@@ -148,7 +173,7 @@ tesla.charge()
 
 
 # ===========================================
-# 8 SUMMARY NOTES
+# 9 SUMMARY NOTES
 # ===========================================
 #
 # Key Points:

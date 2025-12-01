@@ -30,6 +30,7 @@
 #   18. Positional-only & keyword-only parameters
 #   19. Function stubs (placeholders)
 #   20. Docstring format (PEP-257)
+#   21. Functions without return → implicit None
 # 
 # ==========================================
 # 1. BASIC FUNCTION DEFINITION
@@ -413,3 +414,23 @@ def divide(a: float, b: float) -> float:
     return a / b
 
 print(divide(10, 2))
+
+# ==========================================
+# 21. FUNCTIONS WITHOUT RETURN → IMPLICIT NONE
+# ==========================================
+
+print("\n--- SECTION 21: Functions without return (implicit None) ---")
+
+# If a function has NO return statement,
+# Python automatically returns:
+#       None
+#
+# Useful for:
+#   - placeholder logic
+#   - functions that only print
+#   - functions that only modify external state
+
+def f():
+    pass  # no return → Python returns None
+
+print(f())  # prints: None

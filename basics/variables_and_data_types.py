@@ -115,7 +115,7 @@ print("Type name:", type(value).__name__)
 
 print("\n# -----------------------------")
 print("# 6. TYPE CASTING (CONVERSIONS)")
-print("# -----------------------------\n")
+print("\n# -----------------------------")
 
 num_str = "100"
 num_int = int(num_str)
@@ -128,6 +128,28 @@ print(num_float, type(num_float))
 # Possible conversions:
 # int()  float()  str()  bool()
 
+# ================================
+# Printing Variables That Are Not Defined - NameError
+# ================================
+
+# If you try to use or print a variable before it exists,
+# Python raises a NameError.
+
+# Example — undefined variable
+# print(x) # xr is not defined
+
+# Error:
+# NameError: name 'xr' is not defined
+
+# Example — variable defined INSIDE a function cannot be used outside
+# def test():
+#    y = 10 # local variable
+# print(y) # y is not defined here
+# Error:
+# NameError: name 'y' is not defined
+
+# Key rule:
+# A variable must exist *in the current scope* before you can print or use it.
 
 print("\n# -----------------------------")
 print("# 7. PRACTICAL MINI-EXAMPLES")
