@@ -35,9 +35,18 @@ print(fruits[1])  # banana
 print(fruits[-1]) # cherry (last item)
 
 # ------------------------------------------------------------
-# Slicing Lists
+# Slicing Lists 
 # ------------------------------------------------------------
-# Slicing returns a portion of the list.
+# Slicing returns a portion of the list. 
+
+# list[start : stop]
+# start → index where the slice begins (inclusive)
+# stop → index where the slice ends (exclusive)
+
+print(fruits[0:2])   # ['apple', 'banana'] this makes slicing predictable -> 2 items
+print(fruits[:2])    # ['apple', 'banana'] So the second number (2) is NOT included in the result.
+print(fruits[1:])    # ['banana', 'cherry']
+print(fruits[::-1])  # reversed list
 print(fruits[0:2])   # ['apple', 'banana']
 print(fruits[:2])    # ['apple', 'banana']
 print(fruits[1:])    # ['banana', 'cherry']
