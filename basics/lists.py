@@ -100,7 +100,10 @@ print(min(numbers))  # 1
 print(sum(numbers))  # 24
 
 numbers.sort()
-print(numbers)       # [1, 2, 4, 8, 9]
+print(numbers)      # [1, 2, 4, 8, 9]
+
+numbers.sort(reverse=True)
+print(numbers)      # [9, 8, 4, 2, 1]
 
 # ------------------------------------------------------------
 # Copying Lists

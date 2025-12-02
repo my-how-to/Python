@@ -1,5 +1,7 @@
 # Types Overview
 
+[BACK](README.md)
+
 Quick reference for Python's built-in collection types. Click a type to jump to the local lesson file.
 
 | Type | Ordered? | Changeable? | Allows Duplicates? | Example | Quick Definition |

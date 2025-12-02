@@ -1,5 +1,7 @@
 # PYTHON EXCEPTIONS — QUICK REFERENCE & CHEATSHEET
 
+[BACK](README.md)
+
 Author: Alexandru Petrenco (with AI assistance from GPT-5)
 
 This file is a certification-oriented summary of the most common
@@ -98,3 +100,5 @@ Master these and you'll cover **90%** of real-world and exam cases.
 - In certification exams, **understanding WHEN exceptions happen** is more important than memorizing names.
 
 ---
+
+[BACK](README.md)
