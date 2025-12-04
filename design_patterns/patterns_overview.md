@@ -47,7 +47,7 @@ Each entry includes a short, one-line description and a link to the correspondin
 | [**memento.py**](memento.py)                 | Captures and restores an object’s internal state without exposing details.                |
 | [**observer.py**](observer.py)                       | Allows objects to subscribe and react to events or state changes in another object.       |
 | [**state.py**](state.py)                   | Allows an object to alter its behavior when its internal state changes.                   |
-| [**strategy.py**](missing_pattern.md)                | Defines a family of algorithms and makes them interchangeable at runtime.                 |
+| [**strategy.py**](strategy.py)                | Defines a family of algorithms and makes them interchangeable at runtime.                 |
 | [**template_method.py**](template_method.py)         | Defines the skeleton of an algorithm, letting subclasses override certain steps.          |
 | [**visitor.py**](missing_pattern.md)                 | Separates an algorithm from the objects it operates on for easier extension.              |
 
