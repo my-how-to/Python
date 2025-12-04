@@ -32,7 +32,7 @@ mixed = [10, "hello", True, 3.14]
 # ------------------------------------------------------------
 print(fruits[0])  # apple
 print(fruits[1])  # banana
-print(fruits[-1]) # cherry (last item)
+print(fruits[-1]) # cherry (last item). See more in negative_indices.py
 
 # ------------------------------------------------------------
 # Slicing Lists 
@@ -45,10 +45,6 @@ print(fruits[-1]) # cherry (last item)
 
 print(fruits[0:2])   # ['apple', 'banana'] this makes slicing predictable -> 2 items
 print(fruits[:2])    # ['apple', 'banana'] So the second number (2) is NOT included in the result.
-print(fruits[1:])    # ['banana', 'cherry']
-print(fruits[::-1])  # reversed list
-print(fruits[0:2])   # ['apple', 'banana']
-print(fruits[:2])    # ['apple', 'banana']
 print(fruits[1:])    # ['banana', 'cherry']
 print(fruits[::-1])  # reversed list
 
@@ -118,18 +114,18 @@ print(numbers)      # [9, 8, 4, 2, 1]
 # Copying Lists
 # ------------------------------------------------------------
 nums_copy = numbers.copy()
-print(nums_copy)
+print(nums_copy)    # [9, 8, 4, 2, 1]
 
 # ------------------------------------------------------------
 # List Comprehensions
 # ------------------------------------------------------------
 # Create a list of squares
 squares = [n * n for n in numbers]
-print(squares)
+print(squares)      # [81, 64, 16, 4, 1]
 
 # Filter even numbers
 even_numbers = [n for n in numbers if n % 2 == 0]
-print(even_numbers)
+print(even_numbers) # [8, 2]
 
 # ============================================================
 # 3) Nested Lists (Lists Inside Lists)
