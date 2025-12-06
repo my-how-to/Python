@@ -20,6 +20,7 @@
 # ============================================================
 # 1) Lists — the Most Common Collection
 # ============================================================
+print("\n--- SECTION 1: Lists — the Most Common Collection ---")
 
 # A list is an ordered, changeable (mutable) collection.
 fruits = ["apple", "banana", "cherry"]
@@ -95,9 +96,19 @@ print(len(fruits))  # number of elements
 # ------------------------------------------------------------
 print("apple" in fruits)     # True / False
 
+# ------------------------------------------------------------
+# Aliasing vs independent lists
+# ------------------------------------------------------------
+# Assigning one list variable to another does NOT copy; both names point to same object.
+x = [1, 2, 3]
+y = x
+y.append(4)
+print("x after y.append:", x)  # [1, 2, 3, 4] → x and y reference the same list
+
 # ============================================================
 # 2) Useful List Functions
 # ============================================================
+print("\n--- SECTION 2: Useful List Functions ---")
 
 numbers = [4, 1, 8, 2, 9]
 print(max(numbers))  # 9
@@ -127,9 +138,14 @@ print(squares)      # [81, 64, 16, 4, 1]
 even_numbers = [n for n in numbers if n % 2 == 0]
 print(even_numbers) # [8, 2]
 
+# List repetition duplicates the list content N times.
+print([1, 2] * 2)   # [1, 2, 1, 2]
+print([1, 2] * 4)   # [1, 2, 1, 2, 1, 2, 1, 2]
+
 # ============================================================
 # 3) Nested Lists (Lists Inside Lists)
 # ============================================================
+print("\n--- SECTION 3: Nested Lists ---")
 
 matrix = [
     [1, 2, 3],
