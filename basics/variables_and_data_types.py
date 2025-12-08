@@ -119,8 +119,8 @@ print("\n# -----------------------------")
 
 # print(int("3.5")) 
 # int() cannot convert a decimal string. Must use float("3.5") first.
-
-
+# Correct way:
+print(int(float("3.5")))  # Output: 3
 
 num_str = "100"
 num_int = int(num_str)

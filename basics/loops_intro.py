@@ -142,9 +142,9 @@ while True:
         print("Invalid input, try again.")
 
 
-print("\n# -----------------------------")
-print("# 9. COMMON PITFALLS & TIPS")
-print("# -----------------------------\n")
+# ================================
+# 9. COMMON PITFALLS & TIPS
+# ================================
 
 # - Avoid while True unless you have a clear break condition.
 # - Never modify a list in place while iterating over it; create a copy.

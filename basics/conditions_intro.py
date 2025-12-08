@@ -12,10 +12,11 @@
 # Contents:
 #   1. Simple if statements
 #   2. Comparison & logical operators
-#   3. Multi-branch decisions
-#   4. Nested decisions
-#   5. Truthy vs falsy
-#   6. Basic input validation
+#   3. Boolean expressions in conditions
+#   4. Multi-branch decisions
+#   5. Nested decisions
+#   6. Truthy vs falsy
+#   7. Basic input validation
 #
 # ============================================================
 
@@ -51,7 +52,39 @@ if day == "Saturday" or day == "Sunday":
 
 
 print("\n# -----------------------------")
-print("# 3. MULTI-BRANCH DECISIONS")
+print("# 3. BOOLEAN EXPRESSIONS IN CONDITIONS")
+print("# -----------------------------\n")
+
+# A boolean expression is any calculation that resolves to True or False.
+# You can store them in variables or combine multiple expressions.
+
+# Example 1: Direct boolean variable
+balance = 150
+account_on_hold = False
+has_funds = balance > 0
+can_withdraw = has_funds and not account_on_hold
+print("Can withdraw?", can_withdraw)
+
+# Example 2: Combined expressions
+day_type = "weekday"
+has_vacation = True
+
+if day_type == "weekend" or has_vacation:
+    print("Plan a longer hike.")
+else:
+    print("Keep it to a short walk.")
+
+# Example 3: Using 'not' operator
+is_cold = True
+has_jacket = False
+
+# Note: You can use 'not' to invert any boolean expression.
+if is_cold and not has_jacket:
+    print("Buy a jacket before going out.")
+
+
+print("\n# -----------------------------")
+print("# 4. MULTI-BRANCH DECISIONS")
 print("# -----------------------------\n")
 
 traffic_light = "yellow"
@@ -65,7 +98,7 @@ else:
 
 
 print("\n# -----------------------------")
-print("# 4. NESTED DECISIONS")
+print("# 5. NESTED DECISIONS")
 print("# -----------------------------\n")
 
 user_role = "editor"
@@ -83,7 +116,7 @@ else:
 
 
 print("\n# -----------------------------")
-print("# 5. TRUTHY VS FALSY")
+print("# 6. TRUTHY VS FALSY")
 print("# -----------------------------\n")
 
 shopping_cart = []
@@ -96,7 +129,7 @@ if username:
 
 
 print("\n# -----------------------------")
-print("# 6. BASIC INPUT VALIDATION")
+print("# 7. BASIC INPUT VALIDATION")
 print("# -----------------------------\n")
 
 while True:
@@ -111,4 +144,3 @@ while True:
         break
     else:
         print("Keep guesses between 1 and 5.")
-

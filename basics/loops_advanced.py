@@ -21,10 +21,9 @@
 # 
 # ============================================================
 
-
-# ================================
-# 1. FOR LOOPS (known repetitions)
-# ================================
+print("\n# -----------------------------")
+print("# 1. FOR LOOPS (known repetitions)")
+print("# -----------------------------\n")
 
 for i in range(5):
     print("Iteration:", i)
@@ -49,11 +48,9 @@ for letter in "Python":
 # o
 # n
 
-
-
-# ================================
-# 2. WHILE LOOPS (unknown count) - printing OUTSIDE the loop
-# ================================
+print("\n# -----------------------------")
+print("# 2. WHILE LOOPS (unknown count) - printing OUTSIDE the loop")
+print("# -----------------------------\n")
 
 count = 0
 
@@ -69,9 +66,9 @@ while count < 3:
 # WARNING:
 # while True → infinite loop unless break is used.
 
-# ==========================================
-# 2.1 Example — printing OUTSIDE the loop (final value printed after the loop finishes)
-# ==========================================
+print("\n# -----------------------------")
+print("# 2.1 Example — printing OUTSIDE the loop (final value printed after the loop finishes)")
+print("# -----------------------------\n")
 
 count = 0
 
@@ -82,9 +79,9 @@ print("Final count:", count)
 # Output:
 # Final count: 3
 
-# ================================
-# 3. BREAK STATEMENT
-# ================================
+print("\n# -----------------------------")
+print("# 3. BREAK STATEMENT")
+print("# -----------------------------\n")
 
 for i in range(10):
     if i == 5:
@@ -100,9 +97,9 @@ for i in range(10):
 
 
 
-# ================================
-# 4. CONTINUE STATEMENT
-# ================================
+print("\n# -----------------------------")
+print("# 4. CONTINUE STATEMENT")
+print("# -----------------------------\n")
 
 for i in range(10):
     if i % 2 == 0:
@@ -118,9 +115,9 @@ for i in range(10):
 
 
 
-# ==========================================
-# 5. BREAK + CONTINUE (combined example)
-# ==========================================
+print("\n# -----------------------------")
+print("# 5. BREAK + CONTINUE (combined example)")
+print("# -----------------------------\n")
 
 commands = ["run", "skip", "jump", "invalid", "exit", "run"]
 
@@ -138,9 +135,9 @@ for cmd in commands:
 
 
 
-# ================================
-# 6. NESTED LOOPS
-# ================================
+print("\n# -----------------------------")
+print("# 6. NESTED LOOPS")
+print("# -----------------------------\n")
 
 # Multiplication table
 for a in range(1, 4):
@@ -164,9 +161,9 @@ for a in range(1, 4):
 
 
 
-# ================================
-# 7. LOOP ELSE CLAUSE
-# ================================
+print("\n# -----------------------------")
+print("# 7. LOOP ELSE CLAUSE")
+print("# -----------------------------\n")
 
 numbers = [3, 5, 7, 9]
 target = 7
@@ -183,9 +180,9 @@ else:
 
 
 
-# ================================
-# 8. ENUMERATE (index looping)
-# ================================
+print("\n# -----------------------------")
+print("# 8. ENUMERATE (index looping)")
+print("# -----------------------------\n")
 
 fruits = ["apple", "banana", "cherry"]
 
@@ -199,9 +196,9 @@ for index, fruit in enumerate(fruits):
 
 
 
-# ================================
-# 9. LOOPING THROUGH DICTIONARIES
-# ================================
+print("\n# -----------------------------")
+print("# 9. LOOPING THROUGH DICTIONARIES")
+print("# -----------------------------\n")
 
 person = {"name": "Alex", "age": 30, "city": "Chisinau"}
 
