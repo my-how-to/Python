@@ -1,11 +1,11 @@
 # ============================================================
-#            LESSON - LOOPS
+#            LESSON — LOOPS (ADVANCED)
 # ============================================================
 # Author: Alexandru Petrenco (with AI assistance from OpenAI GPT-5)
 #
 # Description:
-#   This file explains and demonstrates Python loops with
-#   clear, runnable examples. 
+#   This lesson builds on loops_intro.py with more detailed
+#   control-flow techniques and best practices.
 #
 # Contents:
 #   1. For loops
@@ -229,4 +229,3 @@ for key, value in person.items():
 # - Use break to prevent unnecessary iterations.
 # - continue is useful but avoid overuse.
 # - for is preferred over while unless you need unknown repetitions.
-
