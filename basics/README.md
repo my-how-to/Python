@@ -23,7 +23,9 @@ Below is a structured **table of contents** with a short description for every l
 | **11**   | [Exception Handling](exceptions/error_handling.py)                 | try/except, specific errors, finally                 | [read more](docs/error_handling_reference.md) |      
 | **12** | [Tuples](tuples.py)                                     | immutable ordered collections, unpacking             | —                                        |      
 | **13** | [Sets](sets.py)                                         | unique items, set operations                         | —                                        |      
-| **14**   | [Strings](strings.py)                                   | text handling, slicing, methods, formatting          | —                                        |      
+| **14** | [Strings](strings.py)                                   | text handling, slicing, methods, formatting          | —                                        |      
+| **15** | [Modules (Part 1)](../modules/modules_part1.py)         | import statements, aliases, sys.path, __name__ guard | —                                        |
+| **16** | [Modules (Part 2)](../modules/modules_part2.py)         | stdlib tour, packages, reloads, dynamic imports      | —                                        |
 
 
 
