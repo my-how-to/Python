@@ -12,6 +12,17 @@ A compact personal repository containing everything I learn about Python — cle
 * control flow: conditions, loops, functions, files
 * quick-reference docs inside `basics/docs/`
 
+### modules/
+
+* dedicated lessons on the import system
+* teaches standard library navigation, packages, reloads, dynamic imports
+* prepares for PCEP/PCAP questions about modules and project structure
+
+### concepts/
+
+* lightweight documentation for foundational computer-science terms
+* quick references to support the lessons (e.g., compiler vs interpreter)
+
 ### builtins/
 
 * focused lessons on essential functions like `len`, `lambda`, comprehensions
