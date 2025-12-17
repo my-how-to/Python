@@ -17,85 +17,91 @@
 # ============================================================
 
 
-# ============================================================
-# 1. BASIC USAGE & MULTIPLE ARGUMENTS
-# ============================================================
-print("\n--- SECTION 1: print() Basics ---")
+print("\n# -----------------------------")
+print("# 1. print() Basics")
+print("# -----------------------------\n")
 
+# print() collects every positional argument, converts each to a string, and joins them with sep.
+# Keyword arguments such as sep, end, file, and flush fine-tune how the text is joined and delivered.
 print("Hello, world!")          # simplest usage
 print("Mix types:", 1, True)    # accepts any number of arguments
 print("Inline", "space", "separated")  # default sep=" "
 
 
-# ============================================================
-# 2. CUSTOM SEPARATORS AND LINE ENDINGS
-# ============================================================
-print("\n--- SECTION 2: Separators & Endings ---")
+print("\n# -----------------------------")
+print("# 2. Separators & Endings")
+print("# -----------------------------\n")
 
+# Custom sep replaces the default single space separator (sep=" ") between args.
+# Think of sep as the glue inserted between each converted argument.
 print("comma", "separated", sep=", ")
+# Custom end overrides the default newline (end="\n") appended after every print call.
+# Useful when you want progress text on one line or to add a custom suffix.
 print("no newline", end="")
-print(" — appended thanks to end=''")
+print(" — appended thanks to end=''")  # resumes normal newline here
 
 print("countdown", 3, 2, 1, sep=" 🕒 ", end="... go!\n")
 
 
-# ============================================================
-# 3. PRINTING TO FILES OR STDERR
-# ============================================================
-print("\n--- SECTION 3: Redirecting Output ---")
+print("\n# -----------------------------")
+print("# 3. Redirecting Output")
+print("# -----------------------------\n")
 
 from pathlib import Path
 import sys
 
 log_path = Path("print_demo.log")
 with log_path.open("w", encoding="utf-8") as fh:
+    # file=<stream> lets you pick the destination: stdout (default), stderr, or an opened file.
+    # Here every print call writes directly to print_demo.log instead of the console.
     print("Logged line 1", file=fh)
     print("Logged line 2", file=fh)
 
 print(f"Wrote to {log_path.resolve()}")
-print("This goes to stderr", file=sys.stderr)
+print("This goes to stderr", file=sys.stderr)  # demonstrate stderr target
 
 
-# ============================================================
-# 4. FORCE FLUSHING FOR REAL-TIME OUTPUT
-# ============================================================
-print("\n--- SECTION 4: Flushing Output ---")
+print("\n# -----------------------------")
+print("# 4. Flushing Output")
+print("# -----------------------------\n")
 
 import time
 
 for n in range(3):
-    print("Tick", n, end="\r", flush=True)  # flush sends text immediately
+    # flush=True forces Python to push the text to the terminal immediately
+    # rather than waiting for the buffer to fill—ideal for status updates or logs.
+    print("Tick", n, end="\r", flush=True)
     time.sleep(0.1)
 print("\nFlushed tick loop complete.")
 
 
-# ============================================================
-# 5. FORMATTING STRINGS
-# ============================================================
-print("\n--- SECTION 5: Formatting Helpers ---")
+print("\n# -----------------------------")
+print("# 5. Formatting Helpers")
+print("# -----------------------------\n")
 
 name = "Alex"
 score = 9.375
 
+# f-strings evaluate expressions inline; {score:.2f} formats score as fixed-point with 2 decimals.
 print(f"f-string → {name} scored {score:.2f}")
+# str.format() accepts placeholders and optional format specifiers for alignment/precision control.
 print("format() → {} scored {:.2f}".format(name, score))
+# Percent formatting mirrors C's printf%; handy for legacy code or when translators expect % tokens.
 print("percent style → %s scored %.2f" % (name, score))
 
 
-# ============================================================
-# 6. UNPACKING ITERABLES WITH *
-# ============================================================
-print("\n--- SECTION 6: Iterable Unpacking ---")
+print("\n# -----------------------------")
+print("# 6. Iterable Unpacking")
+print("# -----------------------------\n")
 
 values = ["python", "rocks", 2024]
 print(*values)                        # expands into positional args
 print("CSV:", *values, sep=", ")
 
 
-# ============================================================
-# 7. CUSTOM OBJECTS (__str__ vs __repr__)
-# ============================================================
-print("\n--- SECTION 7: Custom Objects ---")
+print("\n# -----------------------------")
+print("# 7. Custom Objects")
+print("# -----------------------------\n")
 
 class Sample:
     def __init__(self, data):
@@ -112,10 +118,9 @@ print(obj)           # uses __str__
 print([obj])         # list display falls back to __repr__
 
 
-# ============================================================
-# 8. DEBUGGING PATTERNS
-# ============================================================
-print("\n--- SECTION 8: Debug Output ---")
+print("\n# -----------------------------")
+print("# 8. Debug Output")
+print("# -----------------------------\n")
 
 def fetch_user(user_id):
     print(f"[DEBUG] fetch_user id={user_id}")
@@ -125,10 +130,9 @@ result = fetch_user(101)
 print("Result:", result)
 
 
-# ============================================================
-# 9. PITFALLS & TIPS
-# ============================================================
-print("\n--- SECTION 9: Pitfalls & Tips ---")
+print("\n# -----------------------------")
+print("# 9. Pitfalls & Tips")
+print("# -----------------------------\n")
 
 print("Joining numbers directly:", 1, 2, 3)
 print("Better for strings:", " ".join(str(n) for n in (1, 2, 3)))
@@ -136,4 +140,3 @@ print("Better for strings:", " ".join(str(n) for n in (1, 2, 3)))
 print("Beware repeated sep usage:", "path", "to", "file", sep="\\")
 print(r"Better to join manually: \"\\\".join(...)")  # raw string for clarity
 
-print("\nLesson complete: print() is flexible once you learn its keyword controls.")
