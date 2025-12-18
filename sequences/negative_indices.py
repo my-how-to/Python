@@ -53,9 +53,12 @@ print("# -----------------------------\n")
 
 letters = ["a", "b", "c", "d", "e" , "f", "g"]
 
-print(letters[-3:-2])    
+print(letters[-3:-1])   # ['e', 'f']  # from -3 to -2  
 print(letters[:-2])     # ['a', 'b', 'c', 'd', 'e']  # all but last 2
 print(letters[-4:-1])   # ['d', 'e', 'f']  # from -4 to -2
+print(letters[-5:])     # ['c', 'd', 'e', 'f', 'g']  # from -5 to end       
+print(letters[:])       # entire list
+
 
 
 # Mixed example:
