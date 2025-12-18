@@ -21,6 +21,7 @@
 #   9. F-strings and formatting
 #   10. Escaping characters
 #   11. Multi-line strings
+#   12. String operators (+ and *)
 #
 # ============================================================
 
@@ -66,18 +67,11 @@ print("# -----------------------------\n")
 
 name = "alex"
 
-print("Upper:", name.upper())
-print("Lower:", name.lower())
-print("Title:", name.title())
-print("Swapcase:", name.swapcase())
-print("Capitalized:", name.capitalize())
-
-# Output:
-# Upper: ALEX  
-# Lower: alex  
-# Title: Alex  
-# Swapcase: ALEX  
-# Capitalized: Alex  
+print("Upper:", name.upper())               # Upper: ALEX
+print("Lower:", name.lower())               # Lower: alex
+print("Title:", name.title())               # Title: Alex
+print("Swapcase:", name.swapcase())         # Swapcase: ALEX
+print("Capitalized:", name.capitalize())    # Capitalized: Alex
 
 
 print("\n# -----------------------------")
@@ -200,3 +194,47 @@ print(multi)
 # This is a
 # multi-line
 # string.
+
+
+print("\n# -----------------------------")
+print("# 12. STRING OPERATORS (+ AND *)")
+print("# -----------------------------\n")
+
+greeting = "Hello, " + "world!"
+print("Concatenation:", greeting)   # Hello, world!
+
+echo = "ha" * 3
+print("Repetition:", echo)          # hahaha
+
+# A number less than or equal to zero produces an empty string.
+print("Zero repeat:", "ha" * 0)       # Zero repeat:  (empty string)
+print("Negative repeat:", "ha" * -2)  # Negative repeat:  (empty string)
+
+# Drawing a simple rectangle using concatenation and repetition
+top_bottom = "+" + "-" * 10 + "+"
+side = "|" + " " * 10 + "|\n"
+
+print(top_bottom)
+print(side * 5, end="")
+print(top_bottom)
+
+# +----------+
+# |          |
+# |          |
+# |          |
+# |          |
+# |          |
+# +----------+
+
+# Right-aligned triangle using repetition
+height = 5
+for row in range(1, height + 1):
+    spaces = " " * (height - row)   # spaces
+    stars = "*" * row               # stars
+    print(spaces + stars)           # print the row
+
+#     *
+#    **
+#   ***
+#  ****
+# *****

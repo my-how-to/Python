@@ -49,6 +49,9 @@ user_age = 25
 total_sum = 100
 _name = "Alex"
 HEIGHT = 180  # constants usually CAPITALIZED
+_ = "Underscore variable"   # valid but not recommended
+HEIGHT = 180                # constants usually CAPITALIZED
+Import = "Reserved words can be used but not recommended" #started with capital letter
 
 # Invalid names (uncomment to see SyntaxError):
 # 2user = 5
