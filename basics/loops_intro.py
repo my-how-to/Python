@@ -110,18 +110,42 @@ print("\n# -----------------------------")
 print("# 5. LOOP ELSE CLAUSE")
 print("# -----------------------------\n")
 
-numbers = [3, 5, 7, 9]
-target = 7
+# The else block on a loop only runs when the loop finishes naturally
+# (WITHOUT hitting break). It's perfect for search-style tasks.
 
-for n in numbers:
-    if n == target:
-        print("Found:", n)
+print("Example 1 — searching inventory for a target product:")
+inventory = ["laptop", "mouse", "keyboard", "monitor"]
+target_item = "keyboard"
+
+for item in inventory:
+    if item == target_item:
+        print(f"{target_item} is in stock.")
         break
 else:
-    print("Item not found")
+    print(f"{target_item} is missing.")
+
+print("\nExample 2 — validating a password list for forbidden words:")
+passwords = ["cat123", "welcome", "abc!@#", "safePass90"]
+forbidden = {"password", "welcome", "admin"}
+
+for pwd in passwords:
+    if pwd in forbidden:
+        print(f"Rejected insecure password: {pwd}")
+        break
+else:
+    print("All passwords look acceptable.")
+
+print("\nExample 3 — checking if a number is prime:")
+number_to_check = 29
+for divisor in range(2, int(number_to_check ** 0.5) + 1):
+    if number_to_check % divisor == 0:
+        print(number_to_check, "is not prime (divisible by", divisor, ")")
+        break
+else:
+    print(number_to_check, "is prime")
 
 # The else block runs only if the loop was not interrupted by break.
-
+# When you DO break out early, the else block is skipped entirely.
 
 print("\n# -----------------------------")
 print("# 6. NESTED LOOPS")

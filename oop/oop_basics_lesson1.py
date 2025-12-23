@@ -149,7 +149,38 @@ except AttributeError as err:
     print("Attribute deleted:", err)
 
 print("\n# -----------------------------")
-print("# 7. CLASS WITH DEFAULT VALUES & ENCAPSULATION")
+print("# 7. EXPLORING __dict__")
+print("# -----------------------------\n")
+#
+# Every Python object stores its instance-specific data in the __dict__ attribute.
+# Class attributes live in the class dictionary, so they do NOT appear in an instance __dict__
+# until you assign them on that instance.
+
+class DictDemo:
+    shared_value = 10  # class attribute available to all instances
+
+    def __init__(self, label):
+        self.label = label  # stored inside the instance dictionary
+
+
+demo = DictDemo("alpha")
+
+print("Instance __dict__:", demo.__dict__)     # only label is present
+print("Class shared_value via class:", DictDemo.shared_value)
+print("shared_value in class __dict__:", DictDemo.__dict__["shared_value"])
+
+# Assigning to the instance adds entries to its own dictionary.
+demo.shared_value = 99
+print("Instance __dict__ after overriding shared_value:", demo.__dict__)
+
+# Removing the instance override reveals the class attribute again.
+del demo.shared_value
+print("Instance __dict__ after deleting override:", demo.__dict__)
+print("Class shared_value still:", DictDemo.shared_value)
+
+
+print("\n# -----------------------------")
+print("# 8. CLASS WITH DEFAULT VALUES & ENCAPSULATION")
 print("# -----------------------------\n")
 
 class BankAccount:
@@ -177,7 +208,7 @@ alex.withdraw(30)
 
 
 print("\n# -----------------------------")
-print("# 8. INHERITANCE & POLYMORPHISM")
+print("# 9. INHERITANCE & POLYMORPHISM")
 print("# -----------------------------\n")
 
 class ElectricCar(Car):
