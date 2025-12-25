@@ -23,6 +23,9 @@ print("\n# -----------------------------")
 print("# 1. Dictionaries — Mapped Data")
 print("# -----------------------------\n")
 
+empty_dict = {}
+print("empty dict literal:", empty_dict, type(empty_dict))
+
 person = {
     "name": "Alex",
     "age": 32,
@@ -46,7 +49,7 @@ print(person.get("country", "Not specified"))       # Not specified
 # default value returned when key is missing
 print({"x": 1}.get("y", 5))     # 5
 # No default value provided, None is returned when key is missing
-print({"x": 1}.get("y"))        # None
+print({"x": 1}.get("y"))        # None, Get method does not raise an error!
 
 print("\n# -----------------------------")
 print("# 2. Adding, Updating, Removing")

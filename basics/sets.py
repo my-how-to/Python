@@ -17,6 +17,9 @@
 # 1) Sets — Unique, Unordered Collections
 # ============================================================
 
+empty_set = set() # correct way to create an empty set, not {}
+print("empty set:", empty_set, type(empty_set)) 
+
 colors = {"red", "green", "blue", "red"}
 print(colors)  # {'red', 'green', 'blue'}
 
