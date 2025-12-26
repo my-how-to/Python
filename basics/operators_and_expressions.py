@@ -177,5 +177,13 @@ y = y % x # y now holds the remainder of 4 divided by 3
 print (y)       # Output: 1
 
 
+print("\nVisualizing i % 4 values:")
+
 for i in range(20):
-    print(f"i: {i}, i % 3: {i % 4}")
+    print(f"i: {i}, i % 4: {i % 4}")
+
+
+print("\nVisualizing i // 4 values:")
+
+for i in range(20):
+    print(f"i: {i}, i // 4: {i // 4}")

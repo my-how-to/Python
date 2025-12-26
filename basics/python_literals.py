@@ -90,6 +90,21 @@ print("is_enabled:", is_enabled, type(is_enabled))
 print("is_deleted:", is_deleted, type(is_deleted))
 print("placeholder is None?", placeholder is None)
 
+# Boolean literals combine with logical operators to produce new booleans.
+print("True and False:", True and False)    # False
+print("True or False:", True or False)      # True
+print("not True:", not True)                # False
+
+# None is a singleton; use "is" for identity checks.
+missing_value = None
+print("missing_value is None:", missing_value is None)
+print("None == None:", None == None)
+print("None is None:", None is None)
+
+# None participates in logical expressions (it behaves like False in boolean context).
+print("None and True:", None and True)   # None
+print("None or 'fallback':", None or "fallback")
+
 
 print("\n# -----------------------------")
 print("# 5. Collection literals")
