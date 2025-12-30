@@ -79,12 +79,26 @@ print(fruits)
 
 # Or delete by index with del:
 del fruits[0]
+# del fruits  # removes the entire list
 print(fruits)
 
 # Delete a slice (remove multiple items at once):
 fruits = ["apple", "banana", "cherry", "date", "elderberry"]
 del fruits[1:3]
 print(fruits)  # ['apple', 'date', 'elderberry']
+
+# ------------------------------------------------------------
+# del removes a reference, not necessarily the list object
+# ------------------------------------------------------------
+original = ["alpha", "beta", "gamma"]
+alias = original  # both names point to the same list object
+del original      # only deletes the name, not the shared list
+print("alias still works after deleting original:", alias)
+
+# If no references remain, the list becomes unreachable and is cleaned up.
+temp = [1, 2, 3]
+del temp
+# temp is no longer defined here.
 
 # ------------------------------------------------------------
 # Looping Through a List
@@ -105,6 +119,7 @@ print(len(fruits))  # number of elements
 # Checking Membership
 # ------------------------------------------------------------
 print("apple" in fruits)     # True / False
+print("kiwi" not in fruits)  # True / False
 
 # ------------------------------------------------------------
 # Aliasing vs independent lists
@@ -141,6 +156,10 @@ b = a[:]
 b.append(4)
 print("a stays the same, b gets the new item:", a, b)   # a: [1, 2, 3], b: [1, 2, 3, 4]
 
+# "start" is the index of the first element included in the slice;
+#   "end" is the index of the first element not included in the slice.
+
+
 print("\n# -----------------------------")
 print("# 2. Useful List Functions")
 print("# -----------------------------\n")
@@ -151,10 +170,15 @@ print(min(numbers))  # 1
 print(sum(numbers))  # 24
 
 numbers.sort()
-print(numbers)      # [1, 2, 4, 8, 9]
+print("Sorted ascending:", numbers)      # [1, 2, 4, 8, 9]
 
+# Sort in reverse order
 numbers.sort(reverse=True)
-print(numbers)      # [9, 8, 4, 2, 1]
+print("Sorted descending:", numbers)      # [9, 8, 4, 2, 1]
+
+# Reverse the list order without sorting
+numbers.reverse()   # [1, 2, 4, 8, 9]
+print("Reversed:", numbers)
 
 # ------------------------------------------------------------
 # Copying Lists
@@ -213,3 +237,20 @@ for row in matrix:
     for value in row:
         print(value, end=" ")
     print()
+
+
+
+my_list = [1, 2, 4, 4, 1, 4, 2, 6, 2, 9]
+#
+# Write your code here.
+#
+new_list = []
+for i in range(len(my_list)-1):
+    if i != my_list[i-1]:
+        new_list[0].append(i) 
+        print(i)
+
+
+
+print("The list with unique elements only:")
+print(my_list)
