@@ -71,6 +71,19 @@ for a, b in rows:
     not_a = not a
     print(f"{a!s:<5} {b!s:<5} | {and_result!s:<7} | {or_result!s:<6} | {xor_result!s:<7} | {not_a!s}")
 
+print("\n# -----------------------------")
+print("# 2.2 OPERATOR PRECEDENCE (not, and, or)")
+print("# -----------------------------\n")
+
+# Precedence order is: not > and > or
+# Use parentheses when in doubt.
+a = True
+b = False
+c = True
+
+print("a or b and c ->", a or b and c)       # and runs before or
+print("(a or b) and c ->", (a or b) and c)  # parentheses change grouping
+
 
 print("\n# -----------------------------")
 print("# 3. BOOLEAN EXPRESSIONS IN CONDITIONS")

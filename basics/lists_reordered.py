@@ -1,19 +1,18 @@
 # ============================================================
-#            LESSON — LISTS (COLLECTIONS)
+#            LESSON — LISTS (COLLECTIONS) — REORDERED
 # ============================================================
 # Author: Alexandru Petrenco (with AI assistance from OpenAI GPT-5)
 #
 # Description:
-#   This lesson covers lists in Python: what they are, how to
-#   create them, accessing and modifying items, useful list
-#   methods, looping through lists, list comprehensions, and
-#   nested lists.
-#   
+#   Same list examples as lists.py, but reorganized for a clearer
+#   learning flow: access/slicing, mutation, iteration, membership,
+#   aliasing, utilities, comprehensions, and nested lists.
+#
 #   Collections let you store multiple values in one variable,
 #   such as a group of numbers, words, or even objects.
-# 
+#
 # Contents:
-#   1. Lists — the Most Common Collection
+#   1. Lists — the Most Common Collection (reordered flow)
 #   2. Useful List Functions
 #   3. Nested Lists (Lists Inside Lists)
 #
@@ -35,7 +34,7 @@ print(fruits[1])  # banana
 print(fruits[-1]) # cherry (last item). See more in negative_indices.py
 
 # ------------------------------------------------------------
-# Slicing Lists 
+# Slicing Lists
 # ------------------------------------------------------------
 # Slicing returns a portion of the list.
 
@@ -88,19 +87,6 @@ del fruits[1:3]
 print(fruits)  # ['apple', 'date', 'elderberry']
 
 # ------------------------------------------------------------
-# del removes a reference, not necessarily the list object
-# ------------------------------------------------------------
-original = ["alpha", "beta", "gamma"]
-alias = original  # both names point to the same list object
-del original      # only deletes the name, not the shared list
-print("alias still works after deleting original:", alias)
-
-# If no references remain, the list becomes unreachable and is cleaned up.
-temp = [1, 2, 3]
-del temp
-# temp is no longer defined here.
-
-# ------------------------------------------------------------
 # Looping Through a List
 # ------------------------------------------------------------
 for fruit in fruits:
@@ -129,7 +115,7 @@ x = [1, 2, 3]
 y = x
 y.append(4)
 print("x after y.append:", x)  # [1, 2, 3, 4] → x and y reference the same list
-print("y after y.append:", y)  # [1, 2, 3, 4]   
+print("y after y.append:", y)  # [1, 2, 3, 4]
 
 # Rebinding creates a new list object, leaving aliases untouched.
 x = [1, 2, 3]
@@ -148,6 +134,19 @@ print("x references the same list object as y:", x is y)                # True
 # NOTE: For numbers, x = x + 1 and x += 1 are equivalent because ints are immutable.
 # With lists, x += [value] performs in-place modification (like list.extend),
 # and x = x + [value] builds a brand-new list, which is why aliases behave differently.
+
+# ------------------------------------------------------------
+# del removes a reference, not necessarily the list object
+# ------------------------------------------------------------
+original = ["alpha", "beta", "gamma"]
+alias = original  # both names point to the same list object
+del original      # only deletes the name, not the shared list
+print("alias still works after deleting original:", alias)
+
+# If no references remain, the list becomes unreachable and is cleaned up.
+temp = [1, 2, 3]
+del temp
+# temp is no longer defined here.
 
 
 print("\n# -----------------------------")
@@ -210,7 +209,7 @@ independent = [[] for _ in range(3)]
 print(independent, "len:", len(independent)) # [[], [], []] len: 3
 # Now modifying one does not affect the others:
 independent[0].append("wow")
-print(independent, "len:", len(independent)) # [['wow'], [], []]    
+print(independent, "len:", len(independent)) # [['wow'], [], []]
 
 triplicated[0].append("wow")
 print("Appending via one reference touches all:", triplicated)
