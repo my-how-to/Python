@@ -16,10 +16,11 @@
 #   15. Closures
 #   16. nonlocal
 #   17. Recursion
-#   18. Positional-only & keyword-only parameters
-#   19. Function stubs (placeholders)
-#   20. Docstring format (PEP-257)
-#   21. Functions without return → implicit None
+#   18. Keyword argument passing
+#   19. Positional-only & keyword-only parameters
+#   20. Function stubs (placeholders)
+#   21. Docstring format (PEP-257)
+#   22. Functions without return → implicit None
 #
 print("\n# -----------------------------")
 print("# 12. Function aliases")
@@ -136,7 +137,36 @@ print(factorial(5))
 
 
 print("\n# -----------------------------")
-print("# 18. Positional-only & keyword-only parameters")
+print("# 18. Keyword argument passing")
+print("# -----------------------------\n")
+
+# Keyword arguments are passed by name, not by position.
+# They make calls clearer and allow reordering.
+# Rule: All required parameters must come first.
+# Optional (default) parameters must come after.
+
+def full_name(first, last, *, middle=""):
+    if middle:
+        return f"{first} {middle} {last}"
+    return f"{first} {last}"
+
+print(full_name("Ada", "Lovelace"))
+print(full_name(first="Ada", last="Lovelace"))
+print(full_name(last="Lovelace", first="Ada"))
+print(full_name("Ada", "Lovelace", middle="Augusta")) # ordered by position first, then by keyword
+
+def add_three(a, b, c):
+    return a + b + c
+
+print(add_three(1, c=3, b=2)) # mix positional and keyword
+
+# You can also unpack keyword arguments from a dict.
+person = {"first": "Alan", "last": "Turing", "middle": "Mathison"}
+print(full_name(**person))
+
+
+print("\n# -----------------------------")
+print("# 19. Positional-only & keyword-only parameters")
 print("# -----------------------------\n")
 
 # Introduced in Python 3.8+
@@ -160,7 +190,7 @@ print(mixed(1, 2, c=3, d=4))
 
 
 print("\n# -----------------------------")
-print("# 19. Function stubs")
+print("# 20. Function stubs")
 print("# -----------------------------\n")
 
 # pass → empty function body (common during development)
@@ -175,7 +205,7 @@ print("Stub functions executed (no output).")
 
 
 print("\n# -----------------------------")
-print("# 20. Docstrings (PEP-257)")
+print("# 21. Docstrings (PEP-257)")
 print("# -----------------------------\n")
 
 def divide(a: float, b: float) -> float:
@@ -198,7 +228,7 @@ print(divide(10, 2))
 
 
 print("\n# -----------------------------")
-print("# 21. Functions without return (implicit None)")
+print("# 22. Functions without return (implicit None)")
 print("# -----------------------------\n")
 
 # If a function has NO return statement,

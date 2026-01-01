@@ -52,6 +52,26 @@ def add(a, b):
 
 print(add(3, 5))
 
+# A bare return (or no return at all) means the function returns None.
+def log_message(msg):
+    print("LOG:", msg)
+    return
+
+def do_nothing():
+    pass
+
+print(log_message("Saved"))     # prints message, then prints None
+log_message("Error occurred")   # prints message, return value ignored
+print(do_nothing())             # prints None
+
+# You can ignore a return value if you only need the side effect.
+def notify(user):
+    return f"Email sent to {user}"
+
+notify("Alex")  # return value ignored on purpose
+status = notify("Mara")
+print(status)
+
 
 print("\n# -----------------------------")
 print("# 4. Default parameters")
