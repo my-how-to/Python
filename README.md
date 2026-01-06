@@ -6,52 +6,54 @@ A compact personal repository containing everything I learn about Python — cle
 
 ## Structure
 
-### basics/
+### fundamentals/
 
-* core syntax: variables, data types, operators, collections
-* control flow: conditions, loops, functions, files
-* quick-reference docs inside `basics/docs/`
+* core syntax: variables, literals, operators, control flow
+* conditions, loops, short-circuit evaluation
 
-### modules/
+### collections/
 
-* dedicated lessons on the import system
-* teaches standard library navigation, packages, reloads, dynamic imports
-* prepares for PCEP/PCAP questions about modules and project structure
+* lists, tuples, dicts, sets, strings
+* sequence behavior and negative indexing
 
-### concepts/
+### functions/
 
-* lightweight documentation for foundational computer-science terms
-* quick references to support the lessons (e.g., compiler vs interpreter)
+* functions, scope, parameters, and reusable patterns
 
-### builtins/
+### io/
 
-* focused lessons on essential functions like `len`, `lambda`, comprehensions
-* explains protocols (`__len__`, iteration) and common pitfalls
-* roadmap for future lessons (`range`, `enumerate`, `zip`, etc.)
+* file handling and print/input demos
+
+### numbers/
+
+* numeric literals, bitwise, modulus, exponentiation, octal/hexa
+
+### exceptions/
+
+* defensive error handling patterns and rules
 
 ### decorators/
 
 * basics and how `@` works
 * best practices and `functools.wraps`
-* decorators with arguments
-* real examples: logging, timing, retry, caching
+* decorators with arguments and real examples
 
-### exceptions/
+### builtins/
 
-* defensive error handling patterns
-* `try`/`except` structure, custom rules, and anti-patterns
+* essential built-ins like `len`, `lambda`, comprehensions
+* protocols (`__len__`, iteration) and common pitfalls
 
-### oop/
+### assignments/
 
-* classes and objects
-* inheritance and composition
-* dunder methods
-* classmethod, staticmethod, property
+* multiple assignment patterns and unpacking
 
-### sequences/
+### exercises/
 
-* deeper dives into list/tuple behavior not covered in basics
-* slicing tricks, negative indexing, thinking in offsets
+* progressive practice problems
+
+### docs/
+
+* concepts and quick-reference documents
 
 ---
 
