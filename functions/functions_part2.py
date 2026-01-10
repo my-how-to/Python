@@ -137,6 +137,18 @@ def factorial(n):
 print(factorial(5)) # 120
 print(factorial(6)) # 720 
 
+# ------------------------------------------------------------
+# Recursive sum (keep the same logic as the simple example)
+# ------------------------------------------------------------
+def sum_up(x):
+    # Base case: stop when x reaches 3.
+    if x >= 10:
+        return x
+    # Recursive case: add x and continue with x + 1.
+    return x + sum_up(x + 1)
+
+print(sum_up(5))  # 5 + 6 + 7 + 8 + 9 + 10 = 45
+
 
 print("\n# -----------------------------")
 print("# 18. Keyword argument passing")

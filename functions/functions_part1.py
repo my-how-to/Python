@@ -161,6 +161,16 @@ def modify_global():
 modify_global()
 print(a)  # now 7
 
+# global does not create variables — assignment does, and only when executed.
+def set_global_later():
+    global created_late
+    created_late = "now defined"
+
+print("created_late" in globals())  # False before assignment
+set_global_later()
+print("created_late" in globals())  # True after assignment
+print(created_late)
+
 # Better alternative: return the value instead of modifying globals
 counter = 0
 
