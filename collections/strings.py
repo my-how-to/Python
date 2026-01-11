@@ -84,6 +84,7 @@ print("Index of 'a':", text.find("a"))   # first occurrence
 print("Last index of 'a':", text.rfind("a"))
 print("Count of 'a':", text.count("a"))
 print("Contains 'yellow'?", "yellow" in text)
+print("Index of 'na' (index):", text.index("na"))  # searches for value
 
 # Output:
 # Index of 'a': 1

@@ -103,6 +103,13 @@ print(badge) # (3, 42)
 marks = ("A", "B", "A", "C", "A")
 print(marks.count("A"))  # 3
 
+# ------------------------------------------------------------
+# index() method
+# ------------------------------------------------------------
+# index() searches for a value and returns its position.
+animals = ("cat", "dog", "cat")
+print(animals.index("cat"))  # 0
+
 print("\n# -----------------------------")
 print("# 3. Tuple Concatenation")
 print("# -----------------------------\n")

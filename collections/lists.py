@@ -16,6 +16,7 @@
 #   1. Lists — the Most Common Collection
 #   2. Useful List Functions
 #   3. Nested Lists (Lists Inside Lists)
+#   4. extend()
 #
 print("\n# -----------------------------")
 print("# 1. Lists — the Most Common Collection")
@@ -159,6 +160,10 @@ print(max(numbers))  # 9
 print(min(numbers))  # 1
 print(sum(numbers))  # 24
 
+# index() searches for a value and returns its position.
+names = ["Ana", "Sam", "Liu"]
+print(names.index("Sam"))  # 1
+
 numbers.sort()
 print("Sorted ascending:", numbers)      # [1, 2, 4, 8, 9]
 
@@ -233,3 +238,18 @@ for row in matrix:
     for value in row:
         print(value, end=" ")
     print()
+
+print("\n# -----------------------------")
+print("# 4. extend()")
+print("# -----------------------------\n")
+
+# extend() adds all items from another iterable to the list.
+# It differs from append() which adds its argument as a single item.
+nums = [1, 2, 3]
+nums.extend([4, 5])
+print(nums)  # [1, 2, 3, 4, 5]
+
+nums.extend("67")  # strings are iterables too
+# notice how each character is added separately
+# also they are added as strings, not numbers, this is different from int lists
+print(nums)  # [1, 2, 3, 4, 5, '6', '7']

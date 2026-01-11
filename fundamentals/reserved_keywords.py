@@ -87,3 +87,4 @@ print(add(2, 3))
 # This would be invalid syntax:
 # in = 5
 # print(in)
+print(0/1)  
