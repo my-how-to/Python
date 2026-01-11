@@ -66,16 +66,11 @@ Advanced Python topics and PCAP-level material live in a separate repository.
 
 Last updated: 2026-01-11
 
-PCEP exam questions often include caveats and hidden traps. That is good because detecting them means you really understand the question. 
+PCEP questions are full of traps and caveats, but spotting them is key to mastering the material.
 
-My goal is to pass within two tries.  
-The course completion took about 2 months alongside day-to-day activities, and I keep discovering new question traps.  
+I aim to pass within two attempts. While the initial course took two months to complete, I am still finding new 'tricky' questions. I plan to spend another two months practicing with this repo.
 
-That means I expect another ~2 months of practice and review using this repo, plus ongoing updates.  
-The official pre-PCEP course alone is not enough to pass the exam.
-This is my personal conclusion and may not be true for others.
-
-Also, I'd like to know what percentage of exam takers used a voucher on their first attempt; I estimate it at around 30%.
+Personally, I found that the official pre-PCEP course isn't sufficient for the exam, but your mileage may vary. I also estimate that only about 30% of test-takers use a voucher on their first try — I'd love to see the actual data on this.
 
 ---
 
